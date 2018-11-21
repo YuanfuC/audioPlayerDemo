@@ -20,4 +20,6 @@
 
 - (void)stop;
 
+@property (nonatomic, assign) float playtime;
+
 @end

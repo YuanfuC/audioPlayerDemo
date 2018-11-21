@@ -102,6 +102,12 @@ void AudioPlayerAQInputCallback(void *input, AudioQueueRef outQ, AudioQueueBuffe
     outBuffer->mAudioDataByteSize = (uint32_t)readLength;
     memcpy((Byte *)outBuffer->mAudioData, pcmDataBuffer, readLength);
     AudioQueueEnqueueBuffer(outQueue, outBuffer, 0, NULL);
+    
+    AudioTimeStamp timpSt;
+    AudioQueueGetCurrentTime(outQueue, NULL, &timpSt, NULL);
+    self.playtime = timpSt.mSampleTime / 44100;
+   // NSLog(@"%f", timpSt.mSampleTime/44100);
+    
     [syncLock unlock];
 }
 

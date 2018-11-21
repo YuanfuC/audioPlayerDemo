@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong)ios_audioqueue *queue;
+@property (nonatomic, strong) UILabel *timeLable;
 @end
 
 @implementation ViewController
@@ -21,7 +22,33 @@
     ios_audioqueue *queue = [ios_audioqueue new];
     self.queue = queue;
     [self setupUI];
+    
+    [queue addObserver:self forKeyPath:@"playtime" options:NSKeyValueObservingOptionNew context:nil];
 
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if (object == self.queue) {
+        NSNumber *timeID = [change objectForKey:NSKeyValueChangeNewKey];
+        float time = [timeID floatValue];
+    //    NSLog(@"time:%f", time);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.timeLable.text = [self formatTime:time];
+        });
+    }
+}
+
+- (NSString *)formatTime:(float)time {
+    NSInteger timeInt = (NSInteger)time;
+    NSInteger hour = (timeInt/3600) % 60;
+    NSInteger min = (timeInt /60) % 60;
+    NSInteger sec = timeInt % 60;
+    time = time - timeInt;
+    float secf = time + sec;
+    NSString *str =  [NSString stringWithFormat:@"%02ld:%02ld:%06.3f",(long)hour, (long)min, secf];
+
+   NSLog(@"%1f", time);
+    return str;
 }
 
 - (void)setupUI {
@@ -50,12 +77,18 @@
     [stop setFrame:CGRectMake(44, 236, 80, 44)];
     [stop addTarget:self action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
     [stop setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-
+    
+    UILabel *lable = [[UILabel alloc] init];
+    lable.frame = CGRectMake(44, 300, 200, 44);
+    lable.text = @"00:00:00";
+    lable.textColor = [UIColor blueColor];
+    self.timeLable = lable;
     
     [self.view addSubview:startB];
     [self.view addSubview:pause];
     [self.view addSubview:resume];
     [self.view addSubview:stop];
+    [self.view addSubview:lable ];
 }
 
 - (void)startPlay:(id)sender {
