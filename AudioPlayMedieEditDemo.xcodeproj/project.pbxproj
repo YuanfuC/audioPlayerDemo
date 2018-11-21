@@ -16,7 +16,6 @@
 		3221F05721A52B3300F9B3A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221F05621A52B3300F9B3A8 /* main.m */; };
 		3221F06121A52B3300F9B3A8 /* AudioPlayMedieEditDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221F06021A52B3300F9B3A8 /* AudioPlayMedieEditDemoTests.m */; };
 		3221F06C21A52B3300F9B3A8 /* AudioPlayMedieEditDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221F06B21A52B3300F9B3A8 /* AudioPlayMedieEditDemoUITests.m */; };
-		3221F07A21A52B9B00F9B3A8 /* words_bqb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3221F07921A52B9B00F9B3A8 /* words_bqb.mp3 */; };
 		3221F07D21A52E7B00F9B3A8 /* ios_audioqueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221F07C21A52E7B00F9B3A8 /* ios_audioqueue.m */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		3221F06721A52B3300F9B3A8 /* AudioPlayMedieEditDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioPlayMedieEditDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3221F06B21A52B3300F9B3A8 /* AudioPlayMedieEditDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayMedieEditDemoUITests.m; sourceTree = "<group>"; };
 		3221F06D21A52B3300F9B3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3221F07921A52B9B00F9B3A8 /* words_bqb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = words_bqb.mp3; path = AudioPlayMedieEditDemo/words_bqb.mp3; sourceTree = "<group>"; };
 		3221F07B21A52E7B00F9B3A8 /* ios_audioqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_audioqueue.h; sourceTree = "<group>"; };
 		3221F07C21A52E7B00F9B3A8 /* ios_audioqueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_audioqueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				3218515E21A5320D00D36DB2 /* words_bqb.pcm */,
-				3221F07921A52B9B00F9B3A8 /* words_bqb.mp3 */,
 				3221F04621A52B3200F9B3A8 /* AudioPlayMedieEditDemo */,
 				3221F05F21A52B3300F9B3A8 /* AudioPlayMedieEditDemoTests */,
 				3221F06A21A52B3300F9B3A8 /* AudioPlayMedieEditDemoUITests */,
@@ -249,7 +246,6 @@
 				3218515F21A5320D00D36DB2 /* words_bqb.pcm in Resources */,
 				3221F05421A52B3300F9B3A8 /* LaunchScreen.storyboard in Resources */,
 				3221F05121A52B3300F9B3A8 /* Assets.xcassets in Resources */,
-				3221F07A21A52B9B00F9B3A8 /* words_bqb.mp3 in Resources */,
 				3221F04F21A52B3200F9B3A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
