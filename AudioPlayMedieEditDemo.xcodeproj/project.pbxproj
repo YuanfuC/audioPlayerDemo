@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3218515F21A5320D00D36DB2 /* words_bqb.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 3218515E21A5320D00D36DB2 /* words_bqb.pcm */; };
 		3221F04921A52B3200F9B3A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221F04821A52B3200F9B3A8 /* AppDelegate.m */; };
 		3221F04C21A52B3200F9B3A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221F04B21A52B3200F9B3A8 /* ViewController.m */; };
 		3221F04F21A52B3200F9B3A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3221F04D21A52B3200F9B3A8 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		3221F05721A52B3300F9B3A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221F05621A52B3300F9B3A8 /* main.m */; };
 		3221F06121A52B3300F9B3A8 /* AudioPlayMedieEditDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221F06021A52B3300F9B3A8 /* AudioPlayMedieEditDemoTests.m */; };
 		3221F06C21A52B3300F9B3A8 /* AudioPlayMedieEditDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221F06B21A52B3300F9B3A8 /* AudioPlayMedieEditDemoUITests.m */; };
+		3221F07A21A52B9B00F9B3A8 /* words_bqb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3221F07921A52B9B00F9B3A8 /* words_bqb.mp3 */; };
+		3221F07D21A52E7B00F9B3A8 /* ios_audioqueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221F07C21A52E7B00F9B3A8 /* ios_audioqueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3218515E21A5320D00D36DB2 /* words_bqb.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; name = words_bqb.pcm; path = AudioPlayMedieEditDemo/words_bqb.pcm; sourceTree = "<group>"; };
 		3221F04421A52B3200F9B3A8 /* AudioPlayMedieEditDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayMedieEditDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3221F04721A52B3200F9B3A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3221F04821A52B3200F9B3A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		3221F06721A52B3300F9B3A8 /* AudioPlayMedieEditDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioPlayMedieEditDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3221F06B21A52B3300F9B3A8 /* AudioPlayMedieEditDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayMedieEditDemoUITests.m; sourceTree = "<group>"; };
 		3221F06D21A52B3300F9B3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3221F07921A52B9B00F9B3A8 /* words_bqb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = words_bqb.mp3; path = AudioPlayMedieEditDemo/words_bqb.mp3; sourceTree = "<group>"; };
+		3221F07B21A52E7B00F9B3A8 /* ios_audioqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_audioqueue.h; sourceTree = "<group>"; };
+		3221F07C21A52E7B00F9B3A8 /* ios_audioqueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_audioqueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,8 @@
 		3221F03B21A52B3200F9B3A8 = {
 			isa = PBXGroup;
 			children = (
+				3218515E21A5320D00D36DB2 /* words_bqb.pcm */,
+				3221F07921A52B9B00F9B3A8 /* words_bqb.mp3 */,
 				3221F04621A52B3200F9B3A8 /* AudioPlayMedieEditDemo */,
 				3221F05F21A52B3300F9B3A8 /* AudioPlayMedieEditDemoTests */,
 				3221F06A21A52B3300F9B3A8 /* AudioPlayMedieEditDemoUITests */,
@@ -110,6 +119,8 @@
 				3221F05221A52B3300F9B3A8 /* LaunchScreen.storyboard */,
 				3221F05521A52B3300F9B3A8 /* Info.plist */,
 				3221F05621A52B3300F9B3A8 /* main.m */,
+				3221F07B21A52E7B00F9B3A8 /* ios_audioqueue.h */,
+				3221F07C21A52E7B00F9B3A8 /* ios_audioqueue.m */,
 			);
 			path = AudioPlayMedieEditDemo;
 			sourceTree = "<group>";
@@ -235,8 +246,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3218515F21A5320D00D36DB2 /* words_bqb.pcm in Resources */,
 				3221F05421A52B3300F9B3A8 /* LaunchScreen.storyboard in Resources */,
 				3221F05121A52B3300F9B3A8 /* Assets.xcassets in Resources */,
+				3221F07A21A52B9B00F9B3A8 /* words_bqb.mp3 in Resources */,
 				3221F04F21A52B3200F9B3A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3221F07D21A52E7B00F9B3A8 /* ios_audioqueue.m in Sources */,
 				3221F04C21A52B3200F9B3A8 /* ViewController.m in Sources */,
 				3221F05721A52B3300F9B3A8 /* main.m in Sources */,
 				3221F04921A52B3200F9B3A8 /* AppDelegate.m in Sources */,
@@ -433,15 +447,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7UKCH28MMH;
 				INFOPLIST_FILE = AudioPlayMedieEditDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ai.think.ios.AudioPlayMedieEditDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fc6c7e1f-732e-4030-9902-d34c330f438c";
+				PROVISIONING_PROFILE_SPECIFIER = HoverEnterpriseDevelopment20161231;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -450,15 +467,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7UKCH28MMH;
 				INFOPLIST_FILE = AudioPlayMedieEditDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ai.think.ios.AudioPlayMedieEditDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fc6c7e1f-732e-4030-9902-d34c330f438c";
+				PROVISIONING_PROFILE_SPECIFIER = HoverEnterpriseDevelopment20161231;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
