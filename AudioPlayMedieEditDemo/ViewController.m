@@ -31,7 +31,6 @@
     if (object == self.queue) {
         NSNumber *timeID = [change objectForKey:NSKeyValueChangeNewKey];
         float time = [timeID floatValue];
-    //    NSLog(@"time:%f", time);
         dispatch_async(dispatch_get_main_queue(), ^{
             self.timeLable.text = [self formatTime:time];
         });
@@ -46,8 +45,6 @@
     time = time - timeInt;
     float secf = time + sec;
     NSString *str =  [NSString stringWithFormat:@"%02ld:%02ld:%06.3f",(long)hour, (long)min, secf];
-
-   NSLog(@"%1f", time);
     return str;
 }
 
